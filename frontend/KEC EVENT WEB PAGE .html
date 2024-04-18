@@ -1,0 +1,153 @@
+<html>
+<head>
+<title> KEC EVENT TICKET BOOKING </title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+
+<style>
+body{background:url("event img.jpg");}
+.glow {
+  font-size: 130px;
+  color: light;
+  font-family:forte;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px yellow, 0 0 20px red, 0 0 30px orangered, 0 0 40px orange, 0 0 50px yellow, 0 0 60px red, 0 0 70px orangered;
+  }
+  to {
+    text-shadow: 0 0 20px yellow, 0 0 30px red, 0 0 40px orangered, 0 0 50px orange, 0 0 60px yellow, 0 0 70px red, 0 0 80px orangered;
+  }}
+
+  {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+ 
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+p{font-size:43px; font-family: Gabriola; font-weight:bolder; color:darkgoldenrod}
+
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-light " style="margin-left:20px;”>
+
+    <div class="container-fluid row">
+    <div class="navbar-header col">
+          <img src="C:\Users\srisi\OneDrive\Documents\WEB EVENT FILES\weblogo.jpg" class="img-circle" width="60" height="50">
+            </div>
+   
+     <div>
+     <div class="dropdown " style="text-align:right;">
+      <button class="btn btn-lg btn-dark dropdown-toggle" type="button" id="sifo" data-toggle="dropdown"> <span class="glyphicon glyphicon-user"></span> 
+        sign-in </button>  
+          <form class="dropdown-menu float:right" style="font-size:25px">  
+              <div class="form-group">  
+                  <label for="sifo"> Enter Email ID </label>  
+                  <input type="email" class="form-control">  
+              </div>  
+              <div class="form-group">  
+                  <label for="sifo">Enter Password </label>  
+                  <a href="#sifo" style="float:right;font-size:18px;"> Forgot password? </a>  
+                  <input type="password" class="form-control">  
+              </div>  
+              <button type="submit" class="btn btn-danger> Sign in </button>  
+                <div class="sign-up" style="font-size:18px">  
+                  Don't have an account? <a href="#sifo"> Create One </a> </button></div>  
+          </form>
+        </div>
+    
+        </div>
+      
+    </div>
+    
+    </nav>
+        
+<h1 class="glow" style="margin:100px;"><a href="#event" style="text-decoration:none;">KEC EVENT BOOKING</a></h1>
+
+  
+<div class="row"  style="padding-top:400px;">
+  
+
+ <a href="event.html"><div class="col-lg-4 mb-3 d-flex align-items-stretch" width="100px" height="500px">
+    <div class="card">
+      <img class="card-img-top" src="anirudh.jpg" width="100%" height="70%">
+      <div class="card-body d-flex flex-column">
+      <h3 class="card-title text-info text-shadow" style="font-size:70px; font-family: mistral; font-weight:bolder;">Ani's Concert</h3>
+      <p> Date : 06.05.2023</p>
+      <p>Time : 7 PM TO 12 PM </p>
+      </div>
+    </div>
+  </div>
+  </a>
+
+  <a href="event.html"><div class="col-lg-4 mb-3 d-flex align-items-stretch">
+    <div class="card">
+      <img class="card-img-top" src="enthu1.jpg" width="100%" height="70%"" >
+      <div class="card-body d-flex flex-column">
+      <h3 class="caed-title text-info" style="font-size:70px; font-family: mistral; font-weight:bolder;">Enthusia</h3>
+      <p>Date : 22.02.2023 , 23.02.2023</p>
+      <p  id="event">Time: 9 AM TO 7 PM </p>
+      </div>
+    </div>
+  </div>
+  </a>
+  
+  <a href="event.html"><div class="col-lg-4 mb-3 d-flex align-items-stretch" >
+    <div class="card">
+      <img class="card-img-top" src="yuvan.jpg"width="100%" height="70%">
+      <div class="card-body d-flex flex-column">
+      <h3 class="caed-title text-info" style="font-size:70px; font-family: mistral; font-weight:bolder;">U1vanism</h3>
+      <p>Date: 10.07.2023</p>
+      <p>Time: 4 PM TO 10 PM</p>
+    </div>
+    </div>
+  </div>
+  </a>
+</div>
+
+</body>
+
+</html>

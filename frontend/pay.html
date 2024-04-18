@@ -1,0 +1,213 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+<style>
+   .qr-code {
+                  max-width: 200px;
+                  margin: 10px;
+                }
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size:25px;
+  font-family:Gabriola;
+  font-weight:bolder;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+  font-family:Lucida;
+  font-size: 25px;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 style="font-size:50px; font-weight:bolder; font-family: Lucida Bright"><center>Payment Details</center></h1>
+<div class="row ">
+  <div class="col-75">
+    <div class="container">
+      <form action="tq1.html">
+      
+        <div class="row">
+          <div class="col-50">
+            
+            <label for="fname"><i class="fa fa-user" ></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+             <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+             <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+           
+          </div>
+
+          <div class="col-50 " >
+            <div class="row">
+            <div class="col ">
+            
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            </div>
+           <div class="col"> <html>
+              <div class="container-fluid">
+                <div class="text-center">
+                  <img src="https://chart.googleapis.com/chart?cht=qr&chl=Completed+Successfully&chs=160x160&chld=L|0"
+                    class="qr-code img-thumbnail img-responsive" width="100" height="200"  />
+                </div> 
+                </div>
+              </div>
+              <script src=
+                "https://code.jquery.com/jquery-3.5.1.js">
+              </script>
+              <script>
+                function htmlEncode(value) {
+                  return $('<div/>').text(value)
+                    .html();
+                }
+                $(function () {
+                 $('#generate').click(function () {
+                    let finalURL =
+            'https://chart.googleapis.com/chart?cht=qr&chl=' +
+                      htmlEncode($('#content').val()) +
+                      '&chs=160x160&chld=L|0'
+                    $('.qr-code').attr('src', finalURL);
+                  });
+                });
+              </script>
+           </div><br>
+
+           
+            <label for="expmonth">Date</label>
+            <input type="text" id="date" name="date" placeholder="dd--mm--yyyy">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Amount</label>
+                <input type="text" id="amount" name="amount" placeholder="Rs:">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="transaction"> I agree with above transaction
+        </label>
+        <a hrf="C:\Users\srisi\OneDrive\Documents\WEB EVENT FILES\tq1.html"><input type="submit" value="Confirm payment" class="btn"></a>
+      </form>
+    </div>
+  </div>
+ 
+</div>
+
+</body>
+</html>
